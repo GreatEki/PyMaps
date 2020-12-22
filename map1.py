@@ -2,8 +2,8 @@ import folium
 import pandas
 import os
 
-if os.path.exists('files/Volcanoes.txt'):
-    data = pandas.read_csv('files/Volcanoes.txt')
+if os.path.exists('volcano.txt'):
+    data = pandas.read_csv('volcano.txt')
     lat = list(data['LAT'])
     long = list(data['LON'])
     map = folium.Map(location=[6.598, 3.4141], zoom_start=6)
